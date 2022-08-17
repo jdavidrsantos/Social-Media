@@ -13,7 +13,7 @@ if ((window as any).__TAURI__)
     <Footer />
 
 <div class="file" >
-  <a  class="file" href="../PendingPC.xlsx" download="Pictures and Dynosheets Pending">
+  <a  class="file" href="../tvs/PendingPC.xlsx" download="Pictures and Dynosheets Pending">
          <button type="button">Files Pending to Upload</button>
          <img src="../Excel-PNG-Image.png" alt="" srcset="">
          </a>
