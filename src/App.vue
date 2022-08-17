@@ -32,7 +32,7 @@ width: 40%;
   
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 8%;
    max-width: 100%;
  max-height: 100%;
 }
@@ -45,8 +45,8 @@ align-items: center;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-   max-width: 8%;
- max-height: 8%;
+   max-width: 40%;
+ max-height: 40%;
 
 }
 
