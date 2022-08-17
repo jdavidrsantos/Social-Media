@@ -1,8 +1,9 @@
 <script setup lang='ts'>
 import type { TableColumnData, TableData } from '@arco-design/web-vue'
 import type { List } from '~/composables'
+import enUS from '@arco-design/web-vue/es/locale/lang/en-us'
 
-import { Image, history, set_image } from '~/composables'
+import {history, set_image } from '~/composables'
 const { copy: cp } = useClipboard()
 
 const columns: TableColumnData[] = [
@@ -60,6 +61,7 @@ const copy = async (e: List) => {
 </script>
 
 <template>
+  <a-config-provider :locale="enUS">
   <div mb2 w-full text-right h40px>
     <a-button v-if="selectAll" status="danger">
       All Delete
@@ -93,4 +95,5 @@ const copy = async (e: List) => {
       </template>
     </a-table>
   </div>
+  </a-config-provider>
 </template>

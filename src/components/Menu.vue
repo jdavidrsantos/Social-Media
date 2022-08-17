@@ -20,9 +20,9 @@ watchEffect(
       <a-menu-item key="/img-list">
         List
       </a-menu-item>
-      <a-menu-item key="/list">
+      <!-- <a-menu-item key="/list">
         Clipboard
-      </a-menu-item>
+      </a-menu-item> -->
       <!-- <a-menu-item key="/setting">
         Setting
       </a-menu-item> -->

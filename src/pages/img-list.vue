@@ -1,4 +1,8 @@
 <script setup lang='ts'>
+
+
+import enUS from '@arco-design/web-vue/es/locale/lang/en-us'
+
 import { Waterfall } from 'vue-waterfall-plugin-next'
 import { Bucket, Region, copy, cos, imgList, isDark, loadImages } from '~/composables'
 import 'vue-waterfall-plugin-next/style.css'
@@ -71,6 +75,7 @@ loadImages()
 </script>
 
 <template>
+ <a-config-provider :locale="enUS">
   <div v-if="imgList.length > 0">
     <a-button status="danger" absolute right-4 top-5 @click="sure">
       Delete all
@@ -139,6 +144,7 @@ loadImages()
     </Waterfall>
   </div>
   <a-empty v-else />
+   </a-config-provider>
 </template>
 
 <style scoped>
